@@ -119,7 +119,10 @@ nav ul li.btn.hide i:before {
 #hero {
     border: 2px solid black;
     height: 85vh;
-    background-color: #353535;
+    /* background-color: #353535; */
+    background-image: url(gifs/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: space-around;
