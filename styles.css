@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,700;1,900&display=swap');
+
+/* Nav */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background: #151515;
+    padding: 5px 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+nav ul li.items {
+    position: relative;
+    width: auto;
+    margin: 0 16px;
+    text-align: center;
+    order: 3;
+}
+
+nav ul li.items:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 5px;
+    height: 2px;
+    width: 100%;
+    background: #0081a7;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+nav ul li.items:hover:after {
+    opacity: 1;
+    bottom: 8px;
+}
+
+nav ul li.logo {
+    flex: 1;
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+    cursor: default;
+    user-select: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .4s;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav ul li:hover a {
+    color: #0081a7;
+}
+
+nav ul li i {
+    font-size: 23px;
+}
+
+nav ul li.btn {
+    display: none;
+}
+
+nav ul li.btn.hide i:before {
+    content: '\f00d';
+}
+
+@media all and (max-width: 900px) {
+    nav {
+        padding: 5px 30px;
+    }
+
+    nav ul li.items {
+        width: 100%;
+        display: none;
+    }
+
+    nav ul li.items.show {
+        display: block;
+    }
+
+    nav ul li.btn {
+        display: block;
+    }
+
+    nav ul li.items:hover {
+        border-radius: 5px;
+        box-shadow: inset 0 0 5px #0081a7,
+            inset 0 0 10px #0081a7;
+    }
+
+    nav ul li.items:hover:after {
+        opacity: 0;
+    }
+}
+
+/* Hero */
+
+#hero {
+    border: 2px solid black;
+    height: 85vh;
+    background-color: #353535;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#hero-img {
+    /* border: 2px solid red; */
+    height: 50vh;
+    width: 30%;
+}
+
+#hero-img>img {
+    height: 100%;
+    width: 100%;
+}
+
+#hero-text {
+    /* border: 2px solid blue; */
+    height: 50vh;
+    width: 50%;
+    text-align: center;
+}
+
+#hero-h1 {
+    /* border: 2px solid red; */
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+#hero-p {
+    /* border: 2px solid blue; */
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 40px;
+}
+
+#contactbtn {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #023e8a;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#contactbtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#contactbtn span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+
+#contactbtn:hover span {
+    padding-right: 15px;
+}
+
+#contactbtn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#contactbtn>a {
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    #hero {
+        display: block;
+        height: 65vh;
+        width: 100%;
+    }
+
+    #hero-img {
+        /* border: 2px solid red; */
+        height: 20vh;
+        width: 20vh;
+        margin: 20px auto auto auto;
+    }
+
+    #hero-text {
+        margin: 20px auto;
+        width: 100%;
+    }
+
+    #hero-h1 {
+        margin-bottom: 20px;
+    }
+
+    #hero-p {
+        margin-bottom: 20px;
+    }
+
+    .plan .title {
+        text-align: center;
+    }
+
+    .form {
+        width: 2vh;
+        height: 2vh;
+    }
+}
+
+#about {
+    border: 2px solid black;
+    height: 85vh;
+}
+
+#about>h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#services {
+    height: 85vh;
+}
+
+#services>h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.card-container {
+    display: block;
+    margin-top: 50px;
+}
+
+.plan {
+    border-radius: 16px;
+    box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+    padding: 10px;
+    color: #697e91;
+    /* max-width: 300px; */
+    width: 100%;
+}
+
+.plan strong {
+    font-weight: 600;
+    color: #fff;
+}
+
+.plan .inner {
+    align-items: center;
+    padding: 20px;
+    padding-top: 40px;
+    background-color: #353535;
+    border-radius: 12px;
+    position: relative;
+}
+
+.plan .pricing {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #0077b6;
+    border-radius: 99em 0 0 99em;
+    display: flex;
+    align-items: center;
+    padding: 0.625em 0.75em;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.plan .pricing small {
+    color: #fff;
+    font-size: 0.75em;
+    margin-left: 0.25em;
+}
+
+.plan .title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #0077b6;
+}
+
+.plan .title+* {
+    margin-top: 0.75rem;
+}
+
+.plan .info+* {
+    margin-top: 1rem;
+}
+
+.plan .features {
+    display: flex;
+    flex-direction: column;
+}
+
+.plan .features li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.plan .features li+* {
+    margin-top: 0.75rem;
+}
+
+.plan .features .icon {
+    background-color: #1FCAC5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.plan .features .icon svg {
+    width: 14px;
+    height: 14px;
+}
+
+.plan .features+* {
+    margin-top: 1.25rem;
+}
+
+.plan .action {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.plan .button {
+    background-color: #0077b6;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.125rem;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 0.625em 0.75em;
+    text-decoration: none;
+}
+
+.plan .button:hover,
+.plan .button:focus {
+    background-color: #023e8a;
+}
+
+@media (min-width: 900px) {
+    .card-container {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+#contact {
+    height: 85vh;
+}
+
+.form {
+    border: 2px solid #0077b6;
+    margin: 60px auto;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    height: 65vh;
+    width: 85vh;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+}
+
+.form .title {
+    color: #0077b6;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form input,
+.form textarea {
+    outline: 0;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 8px 14px;
+    border-radius: 8px;
+    width: 100%;
+    height: 50px;
+}
+
+.form textarea {
+    height: 200px;
+    resize: none;
+}
+
+.form button {
+    align-self: flex-end;
+    padding: 8px;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #0077b6;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    .form {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .form {
+        width: 95vw;
+    }
+}
+@media screen and (max-width: 450px) {
+    #hero {
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .form {
+        width: 95vw;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
