@@ -243,14 +243,49 @@ nav ul li.btn.hide i:before {
 }
 
 #about {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 85vh;
+}
+
+#about-c {
+    /* border: 2px solid yellow; */
+    height: 90%;
 }
 
 #about>h1 {
     text-align: center;
     margin-top: 10px;
     font-family: 'Raleway', sans-serif;
+}
+
+#pro {
+    height: 100%;
+    width: 100%;
+}
+
+#e-img {
+    /* border: 2px solid red; */
+    height: 40vh;
+    width: 40vh;
+    margin: 0 auto;
+}
+
+#e-text {
+    /* border: 2px solid green; */
+    width: 60vh;
+    height: 40vh;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#e-h1 {
+    /* border: 2px solid blue; */
+    margin-bottom: 20px;
+}
+
+#e-p {
+    /* border: 2px solid orange; */
+    height: 30vh;
 }
 
 #services {
@@ -392,15 +427,25 @@ nav ul li.btn.hide i:before {
         display: flex;
         justify-content: space-around;
     }
+
+    #about-c {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #e-img {
+        height: 60vh;
+        width: 60vh;
+    }
 }
 
 #contact {
-    height: 85vh;
+    height: 75vh;
 }
 
 .form {
     border: 2px solid #0077b6;
-    margin: 60px auto;
+    margin: 60px auto 0px auto;
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -458,22 +503,46 @@ nav ul li.btn.hide i:before {
     .form {
         width: 90vw;
     }
+    #e-text {
+        width: fit-content;
+    }
+    #hero-p {
+        background-color: #151515;
+    }
 }
 
 @media screen and (max-width: 400px) {
     .form {
         width: 95vw;
     }
+    .about-c {
+        width: 100%;
+    }
+    #hero-p {
+        background-color: #151515;
+    }
+
 }
+
 @media screen and (max-width: 450px) {
     #hero {
         height: 80vh;
     }
+    #e-text {
+        width: fit-content;
+    }
+    #hero-p {
+        background-color: #151515;
+    }
+
 }
 
 @media screen and (max-width: 900px) {
     .form {
         width: 95vw;
+    }
+    #hero-p {
+        background-color: #151515;
     }
 }
 
