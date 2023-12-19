@@ -437,6 +437,9 @@ nav ul li.btn.hide i:before {
         height: 60vh;
         width: 60vh;
     }
+    #e-text {
+        margin-top: 10px;
+    }
 }
 
 #contact {
@@ -521,6 +524,9 @@ nav ul li.btn.hide i:before {
     #hero-p {
         background-color: #151515;
     }
+    #e-text {
+        margin-top: 30px;
+    }
 
 }
 
@@ -534,6 +540,9 @@ nav ul li.btn.hide i:before {
     #hero-p {
         background-color: #151515;
     }
+    #e-text {
+        margin-top: 30px;
+    }
 
 }
 
@@ -543,6 +552,9 @@ nav ul li.btn.hide i:before {
     }
     #hero-p {
         background-color: #151515;
+    }
+    #e-text {
+        margin-top: 30px;
     }
 }
 
